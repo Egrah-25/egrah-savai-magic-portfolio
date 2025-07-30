@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egrah Savai Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Hi, I'm <span class="typing"></span></h1>
+    <p class="tagline">A biomedical science graduate exploring software development</p>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I’m passionate about bridging healthcare and tech. I love learning how code can improve lives.</p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p>BSc Biomedical Science – First-Class Honors</p>
+      <a href="#" download>Download My CV</a>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>💧 Water Reminder App (concept)</li>
+        <li>🌐 This Portfolio Website</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    const words = ["Egrah Savai.", "a Developer.", "a Researcher.", "a Problem Solver."];
+    let i = 0, timer;
+    function typingEffect() {
+      let word = words[i].split("");
+      let loopTyping = function () {
+        if (word.length > 0) {
+          document.querySelector(".typing").innerHTML += word.shift();
+        } else {
+          deletingEffect();
+          return false;
+        }
+        timer = setTimeout(loopTyping, 150);
+      };
+      loopTyping();
+    }
+
+    function deletingEffect() {
+      let word = words[i].split("");
+      let loopDeleting = function () {
+        if (word.length > 0) {
+          word.pop();
+          document.querySelector(".typing").innerHTML = word.join("");
+        } else {
+          i = (i + 1) % words.length;
+          typingEffect();
+          return false;
+        }
+        timer = setTimeout(loopDeleting, 100);
+      };
+      setTimeout(loopDeleting, 1000);
+    }
+
+    typingEffect();
+  </script>
+</body>
+</html>

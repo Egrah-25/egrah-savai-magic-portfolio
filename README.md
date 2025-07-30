@@ -19,4 +19,5 @@ This Portfolio Website
 🔗 How to View
 
 The website is hosted on GitHub Pages.
-👉 Click to view: https://github.com/YOURUSERNAME/YOURREPO
+👉 Click to view:
+https://github.com/Egrah-25/egrah-savai-magic-portfolio.git

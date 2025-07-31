@@ -2,89 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Egrah Savai Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Egrah Savai | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <lottie-player 
-    src="https://assets2.lottiefiles.com/packages/lf20_x62chJ.json"  
-    background="transparent"  
-    speed="1"  
-    style="position: fixed; z-index: -1; width: 100vw; height: 100vh; top: 0; left: 0;"  
-    loop  
-    autoplay>
-  </lottie-player>
-  
+
+  <div class="garden-animation"></div>
+
   <div class="container">
-    <h1>Hi, I'm <span class="typing"></span></h1>
-    <p class="tagline">A biomedical science graduate exploring software development</p>
+    <header>
+      <h1>Hello, I'm <span class="highlight">Egrah Nyanchama Savai</span></h1>
+      <p class="tagline">A Biomedical Scientist & Aspiring Software Developer 🌱</p>
+    </header>
 
-    <section class="about">
+    <section>
       <h2>About Me</h2>
-      <p>I’m passionate about bridging healthcare and tech. I love learning how code can improve lives.</p>
+      <p>
+        I hold a First-Class Honors degree in Biomedical Science from Daystar University.
+        My passion lies at the intersection of healthcare, research, and technology. 
+        I am currently sharpening my software development skills while pursuing opportunities 
+        to contribute to impactful research and digital health solutions.
+      </p>
     </section>
 
-    <section class="education">
-      <h2>Education</h2>
-      <p>BSc Biomedical Science – First-Class Honors</p>
-      <a href="#" download>Download My CV</a>
-    </section>
-
-    <section class="projects">
-      <h2>Projects</h2>
+    <section>
+      <h2>Skills</h2>
       <ul>
-        <li>💧 Water Reminder App (concept)</li>
-        <li>🌐 This Portfolio Website</li>
+        <li><strong>Biomedical:</strong> Molecular biology, RT-PCR, serology, microbiology, diagnostics</li>
+        <li><strong>Research:</strong> Sample analysis, data collection, biostatistics, ethics compliance</li>
+        <li><strong>Software Dev:</strong> HTML, CSS, Python basics, Git & GitHub</li>
+        <li><strong>Soft Skills:</strong> Leadership, time management, counseling, problem-solving</li>
       </ul>
     </section>
 
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+    <section>
+      <h2>Featured Project</h2>
+      <p><strong>Water Awareness App (Concept)</strong> – A simple web app to educate communities about waterborne diseases and promote clean water usage using animations and interactive learning tools.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:savaiegrah@gmail.com">savaiegrah@gmail.com</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/egrah-savai-53ab501a0" target="_blank">linkedin.com/in/egrah-savai</a></p>
     </section>
   </div>
 
-  <script>
-    const words = ["Egrah Savai.", "a Developer.", "a Researcher.", "a Problem Solver."];
-    let i = 0, timer;
-    function typingEffect() {
-      let word = words[i].split("");
-      let loopTyping = function () {
-        if (word.length > 0) {
-          document.querySelector(".typing").innerHTML += word.shift();
-        } else {
-          deletingEffect();
-          return false;
-        }
-        timer = setTimeout(loopTyping, 150);
-      };
-      loopTyping();
-    }
-
-    function deletingEffect() {
-      let word = words[i].split("");
-      let loopDeleting = function () {
-        if (word.length > 0) {
-          word.pop();
-          document.querySelector(".typing").innerHTML = word.join("");
-        } else {
-          i = (i + 1) % words.length;
-          typingEffect();
-          return false;
-        }
-        timer = setTimeout(loopDeleting, 100);
-      };
-      setTimeout(loopDeleting, 1000);
-    }
-
-    typingEffect();
-  </script>
 </body>
 </html>

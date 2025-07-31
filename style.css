@@ -23,22 +23,24 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1950&q=80');
+  background-image: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1950&q=80');
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
-  filter: brightness(0.9);
+  opacity: 0.4;
+  filter: brightness(0.95);
 }
 
 /* Content styling */
 .content {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 90%;
+  margin: 5vh auto;
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.85); /* Soft white box */
+  background-color: rgba(255, 255, 255, 0.88);
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 header h1 {
@@ -48,14 +50,14 @@ header h1 {
 }
 
 .highlight {
-  color: #4CAF50;
+  color: #d62828; /* Bold red for your name */
 }
 
 .tagline {
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 2rem;
-  color: #3b6040;
+  color: #e6ac00; /* Sunflower gold for subtle elegance */
 }
 
 section {
@@ -63,8 +65,8 @@ section {
 }
 
 h2 {
-  color: #3b6040;
-  border-bottom: 2px solid #d1e7dd;
+  color: #e6ac00; /* Sunflower gold for headings */
+  border-bottom: 2px solid #ffcc66;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }
@@ -78,10 +80,10 @@ ul li {
 }
 
 a {
-  color: #2e7d32;
+  color: #d62828; /* Matching red links */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  }
+}

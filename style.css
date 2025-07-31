@@ -18,26 +18,27 @@ body {
 /* Decorative animation background */
 .garden-animation {
   position: fixed;
-  top: 0;
-  left: 0;
+  z-index: -1;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  top: 0;
+  left: 0;
   background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1950&q=80');
   background-size: cover;
   background-position: center;
-  opacity: 0.2;
-  filter: blur(3px);
+  opacity: 0.5;
+  filter: brightness(0.9);
 }
 
 /* Content styling */
-.container {
-  max-width: 850px;
-  margin: 4rem auto;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(34, 49, 34, 0.15);
+.content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.85); /* Soft white box */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 header h1 {

@@ -1,75 +1,86 @@
+/* Background Garden Animation */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-  background: linear-gradient(-45deg, #ffecd2, #fcb69f, #f6d365, #fda085);
+  background: linear-gradient(-45deg, #d0f0c0, #f5ffe8, #c6e2ff, #e2fced);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  color: #333;
+  animation: gradientFlow 20s ease infinite;
+  color: #2e4d3f;
 }
 
-.beach-animation {
-  position: fixed;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0
-}
-
-@keyframes gradientBG {
+@keyframes gradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-.container {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+/* Decorative animation background */
+.garden-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  filter: blur(3px);
 }
 
-h1 {
+/* Content styling */
+.container {
+  max-width: 850px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(34, 49, 34, 0.15);
+}
+
+header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
-.typing {
-  color: #ff6b6b;
+.highlight {
+  color: #4CAF50;
 }
 
 .tagline {
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 2rem;
+  color: #3b6040;
 }
 
 section {
   margin-top: 2rem;
 }
 
-form input, form textarea {
-  display: block;
-  width: 100%;
-  margin: 0.5rem 0;
-  padding: 0.8rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+h2 {
+  color: #3b6040;
+  border-bottom: 2px solid #d1e7dd;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
-form button {
-  padding: 0.8rem 2rem;
-  background-color: #ff6b6b;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+ul {
+  padding-left: 1.2rem;
 }
 
-form button:hover {
-  background-color: #ff3b3b;
+ul li {
+  margin-bottom: 0.5rem;
 }
+
+a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  }

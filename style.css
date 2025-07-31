@@ -3,10 +3,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-  background: linear-gradient(-45deg, #d0f0c0, #f5ffe8, #c6e2ff, #e2fced);
+  background: linear-gradient(-45deg, #fce4ec, #ffe4e1, #fff0f5, #f8bbd0); /* Soft rose tones */
   background-size: 400% 400%;
   animation: gradientFlow 20s ease infinite;
   color: #2e4d3f;
+  overflow-x: hidden; /* Prevents horizontal scroll and zoom issues */
 }
 
 @keyframes gradientFlow {
@@ -15,7 +16,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Decorative animation background */
+/* Decorative background image with rose theme */
 .garden-animation {
   position: fixed;
   z-index: -1;
@@ -23,10 +24,10 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1950&q=80');
+  background-image: url('https://images.unsplash.com/photo-1504198266285-165a10f476b0?auto=format&fit=crop&w=1950&q=80'); /* Rose-themed */
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.3;
   filter: brightness(0.95);
 }
 
@@ -35,29 +36,31 @@ body {
   position: relative;
   max-width: 90%;
   margin: 5vh auto;
-  padding: 40px;
+  padding: 40px 30px;
   background-color: rgba(255, 255, 255, 0.88);
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
   overflow-wrap: break-word;
   word-break: break-word;
 }
 
+/* Headers and text styles */
 header h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
+  color: #ff6f61; /* Coral/Rose */
 }
 
 .highlight {
-  color: #d62828; /* Bold red for your name */
+  color: #d62828; /* Deep red for your name */
 }
 
 .tagline {
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 2rem;
-  color: #e6ac00; /* Sunflower gold for subtle elegance */
+  color: #e6ac00; /* Sunflower gold */
 }
 
 section {
@@ -65,7 +68,7 @@ section {
 }
 
 h2 {
-  color: #e6ac00; /* Sunflower gold for headings */
+  color: #e6ac00; /* Gold headings */
   border-bottom: 2px solid #ffcc66;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
@@ -80,10 +83,7 @@ ul li {
 }
 
 a {
-  color: #d62828; /* Matching red links */
+  color: #d62828;
   text-decoration: none;
 }
-
-a:hover {
-  text-decoration: underline;
-}
+  

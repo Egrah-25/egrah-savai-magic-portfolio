@@ -20,4 +20,4 @@ This Portfolio Website
 
 The website is hosted on GitHub Pages.
 👉 Click to view:
-https://github.com/Egrah-25/egrah-savai-magic-portfolio.git
+https://egrah-25.github.io/egrah-savai-magic-portfolio/

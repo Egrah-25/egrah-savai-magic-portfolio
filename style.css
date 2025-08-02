@@ -32,7 +32,7 @@ body {
   background-size: cover;
   background-position: center;
   opacity: 0.5; /* adjust this if too light/dark */
-  filter: brightness(0.8) contrast(1.1) saturate(1.2);
+  filter: brightness(0.9) contrast(1.1) saturate(1.2);
 }
 
 .garden-animation {
@@ -41,7 +41,7 @@ body {
 
 .container {
   max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.4); /* less opaque */
+  background-color: rgba(255, 255, 255, 0.2); /* less opaque */
   backdrop-filter: blur(8px); /* optional: adds a soft glassy effect */
   -webkit-backdrop-filter: blur(4px); /* Safari support */
   padding: 40px;

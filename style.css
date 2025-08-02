@@ -42,8 +42,8 @@ body {
 .container {
   max-width: 800px;
   background-color: rgba(255, 255, 255, 0.15); /* more transparent */
-  backdrop-filter: blur(12px) saturate(250%);
-  -webkit-backdrop-filter: blur(12px) saturate(250%);
+  backdrop-filter: blur(12px) saturate(300%);
+  -webkit-backdrop-filter: blur(12px) saturate(300%);
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);

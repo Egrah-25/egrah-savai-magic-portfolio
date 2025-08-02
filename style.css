@@ -31,7 +31,7 @@ body {
   background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1950&q=80');
   background-size: cover;
   background-position: center;
-  opacity: 0.5; /* adjust this if too light/dark */
+  opacity: 0.; /* adjust this if too light/dark */
   filter: brightness(0.9) contrast(1.1) saturate(1.2);
 }
 
@@ -42,8 +42,8 @@ body {
 .container {
   max-width: 800px;
   background-color: rgba(255, 255, 255, 0.2); /* less opaque */
-  backdrop-filter: blur(8px); /* optional: adds a soft glassy effect */
-  -webkit-backdrop-filter: blur(4px); /* Safari support */
+  backdrop-filter: blur(12px); /* optional: adds a soft glassy effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);

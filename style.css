@@ -35,19 +35,8 @@ body {
   filter: brightness(0.8) contrast(1.1) saturate(1.2);
 }
 
-/* Place image background behind content */
 .garden-animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;
-  background-image: url('https://images.unsplash.com/photo-1551218372-48b6b2a52918?auto=format&fit=crop&w=1950&q=80');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  filter: brightness(0.8) contrast(1.1) saturate(1.2);
+  display: none; /* turned off */ 
 }
 
 .container {

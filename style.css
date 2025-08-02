@@ -6,71 +6,72 @@
   box-sizing: border-box;
 }
 
+/* Base body styling */
 body {
   font-family: 'Playfair Display', serif;
-  color: #ff6600; /* ORANGE text */
-  background: #fdfdfd;
-  overflow-x: hidden;
+  color: #ff6600; /* Orange text */
+  background: url('https://images.unsplash.com/photo-1506086679528-e2eeb7ab444b?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
   min-height: 100vh;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  position: relative;
 }
 
-/* 🌻 Sunflower background */
-.garden-animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;
-  background-image: url('https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?auto=format&fit=crop&w=1950&q=80'); 
-  background-size: cover;
-  background-position: center;
-  opacity: 0.25;
-  filter: brightness(0.7) contrast(1.1);
-}
-
-/* Optional dark overlay for contrast */
+/* Optional dark overlay to improve contrast */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0,0,0,0.3);
   z-index: -1;
+}
+
+/* Place image background behind content */
+.garden-animation {
+  display: none; /* turned off to avoid conflict */
 }
 
 .container {
   max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgba(255,255,255,0.95);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   font-size: 1.2rem;
   line-height: 1.7;
   text-align: left;
-  transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-  .container {
-    padding: 30px 20px;
-    font-size: 1rem;
-  }
+  .container { padding: 30px 20px; font-size: 1rem; }
 }
 
 h1 {
   font-size: 2.5rem;
-  color: #8b1e3f; /* Deep rose/maroon */
   margin-bottom: 20px;
 }
 
-p {
-  margin-bottom: 15px;
+.highlight {
+  color: #ff4500; /* deep orange for name */
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem;
+}
+
+ul li, p {
+  margin-bottom: 0.75rem;
 }

@@ -1,22 +1,23 @@
-/* Background Garden Animation */
+/* Base Styles */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-  background: linear-gradient(-45deg, #fce4ec, #ffe4e1, #fff0f5, #f8bbd0); /* Soft rose tones */
+  background: linear-gradient(-45deg, #fce4ec, #ffe4e1, #fff0f5, #f8bbd0);
   background-size: 400% 400%;
   animation: gradientFlow 20s ease infinite;
   color: #2e4d3f;
-  overflow-x: hidden; /* Prevents horizontal scroll and zoom issues */
+  overflow-x: hidden;
 }
 
+/* Animate soft gradient */
 @keyframes gradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Decorative background image with rose theme */
+/* Optional rose image background */
 .garden-animation {
   position: fixed;
   z-index: -1;
@@ -24,66 +25,80 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url('https://images.unsplash.com/photo-1504198266285-165a10f476b0?auto=format&fit=crop&w=1950&q=80'); /* Rose-themed */
+  background-image: url('https://images.unsplash.com/photo-1504198266285-165a10f476b0?auto=format&fit=crop&w=1950&q=80');
   background-size: cover;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.25;
   filter: brightness(0.95);
 }
 
-/* Content styling */
-.content {
+/* Content Box */
+.container {
   position: relative;
-  max-width: 90%;
+  max-width: 95%;
   margin: 5vh auto;
-  padding: 40px 30px;
-  background-color: rgba(255, 255, 255, 0.88);
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.15);
-  overflow-wrap: break-word;
-  word-break: break-word;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Headers and text styles */
+/* Header */
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 0.2rem;
-  color: #ff6f61; /* Coral/Rose */
+  margin-bottom: 0.3rem;
+  color: #ff6f61;
+  text-align: center;
 }
 
 .highlight {
-  color: #d62828; /* Deep red for your name */
+  color: #d62828;
 }
 
 .tagline {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   margin-bottom: 2rem;
-  color: #e6ac00; /* Sunflower gold */
+  color: #e6ac00;
+  text-align: center;
 }
 
-section {
-  margin-top: 2rem;
-}
-
+/* Section Headings */
 h2 {
-  color: #e6ac00; /* Gold headings */
+  color: #e6ac00;
   border-bottom: 2px solid #ffcc66;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }
 
+/* Lists */
 ul {
   padding-left: 1.2rem;
 }
-
 ul li {
   margin-bottom: 0.5rem;
 }
 
+/* Links */
 a {
   color: #d62828;
   text-decoration: none;
 }
-  
+a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Fix */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 20px 15px;
+   }
+ }
